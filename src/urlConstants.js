@@ -8,5 +8,4 @@ export const drama =`https://api.themoviedb.org/3/discover/movie?api_key=${API_K
 export const history = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=36`
 
 
-//react-netflix-clone-f5f9e
-1//0gNjsQ45Rei6vCgYIARAAGBASNwF-L9IrBtHuCkaY7BGSau1uu0aYH_p6IS7uMXfxzoRpnRPNdNwY4LFpY4SmKwtaStY-OdxCB7E
+//react-netflix-clone-f5f9f
