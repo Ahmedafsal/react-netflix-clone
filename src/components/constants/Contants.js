@@ -1,0 +1,7 @@
+export const baseUrl = 'https://api.themoviedb.org/3'
+export const API_KEY = 'a5ed76134362b5671b30e0898cea3f31'
+export const imageUrl = 'https://image.tmdb.org/t/p/original'
+export const posterImageUrl = 'https://image.tmdb.org/t/p/w300'
+export const smallPosterImageUrl = 'https://image.tmdb.org/t/p/w200'
+export const bgImage = 'https://i.ibb.co/vXqDmnh/background.jpg'
+export const netflixLogo = 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png'
