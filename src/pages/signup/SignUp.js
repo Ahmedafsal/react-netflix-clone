@@ -77,7 +77,7 @@ function SignUp() {
                         setPassword(e.target.value)
                     }} 
                         className="form-text" type="password" ref={inputPassword}
-                        placeholder="password"/>
+                        placeholder="password(1num, 1cap, 1sm, 1sp, min:8)"/>
                     <p className="error-message">{passwordError}</p>
                     <button className="form-btn ">Sign Up</button>
                     <p className="sign-in-anchor" onClick={((e)=> {

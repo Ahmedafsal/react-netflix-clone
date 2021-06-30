@@ -44,21 +44,21 @@ function Login() {
                 //console.log(error.code)
 
                 if (error.code === "auth/user-not-found"){
-                    alert(error.code)
+                    //alert(error.code)
                     setPasswordError('')
-                    setEmailError(error.code)
+                    setEmailError("User not found")
                     inputEmail.current.focus()
                 } 
                 if(error.code === "auth/wrong-password"){
-                    alert("Entered password is wrong")
-                    setPasswordError("Entered password is wrong")
+                    //alert("Entered password is wrong")
+                    setPasswordError("Please check the password")
                     setEmailError('')
                     inputPassword.current.focus()
                 }
             })
         } else {
             inputEmail.current.focus()
-            alert('please fill the form')
+            alert('please write down your credentials')
         } 
     }
 

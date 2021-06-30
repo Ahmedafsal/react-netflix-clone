@@ -3,14 +3,15 @@ import 'firebase/auth'
 import 'firebase/database'
 
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCWPvTZloAFhuc3WeJn41F-3PXuVnd8fYE",
-  authDomain: "react-netflix-clone-f5f9e.firebaseapp.com",
-  projectId: "react-netflix-clone-f5f9e",
-  storageBucket: "react-netflix-clone-f5f9e.appspot.com",
-  messagingSenderId: "249319915076",
-  appId: "1:249319915076:web:2c7a0505ff0f7f92518611",
-  measurementId: "G-8K7334QJ8T"
+  apiKey: "AIzaSyDW7wvIjH1Sn2XFZrxi-7-kMtw-QN37fw8",
+  authDomain: "react-netflix-clone-28925.firebaseapp.com",
+  projectId: "react-netflix-clone-28925",
+  storageBucket: "react-netflix-clone-28925.appspot.com",
+  messagingSenderId: "543778570878",
+  appId: "1:543778570878:web:4642166b28fb7b72374e2f",
+  measurementId: "G-VSH67BKDD9"
 };
 
 export const Firebase = firebase.initializeApp(firebaseConfig);
