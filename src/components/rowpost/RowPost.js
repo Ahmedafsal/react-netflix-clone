@@ -15,7 +15,8 @@ function RowPost(props) {
             //console.log(response.data)
             setMovies(response.data.results)
         }).catch(err=> {
-            alert('Network Error')
+            setView(false)
+            alert('1 Network Error')
         })
         
     }, [])
