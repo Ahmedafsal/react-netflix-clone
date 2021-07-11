@@ -17,15 +17,18 @@ function LoginNavBar(props) {
                         history.push('/')
                         }}
                     src={netflixLogo}/>
-                {
-                props.status ?
-                    <button className="btn btn-nav" onClick= {(e)=> {
-                        history.push('/login')
-                        }}>
-                        Sign In
-                    </button>
-                    : ""
-               }
+                <div className="right-side">
+                    {
+                        props.status ?
+                            <button className="btn-small" onClick= {(e)=> {
+                                history.push('/login')
+                                }}>
+                                Sign In
+                            </button>
+                            : ""
+                    }
+                    <img className= "fork" src="https://static.thenounproject.com/png/1154305-200.png" alt="" />
+               </div>
             </div>
         </div>
     )

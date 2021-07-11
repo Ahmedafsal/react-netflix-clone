@@ -19,10 +19,9 @@
 .poster {
     object-fit: contain;
     max-height: 100px;
-    margin-right: 16px;
+    margin-right: 12px;
     cursor: pointer;
     transition: transform 450ms;
-    outline: 1px solid rgba(0, 0, 0, .9);
     border-radius: 2px;
 }
 
@@ -32,11 +31,10 @@
 }
 
 .poster-large {
-    margin-right: 16px;
+    margin-right: 12px;
     cursor: pointer;
     transition: transform 450ms;
     max-height: 230px;
-    outline: 1px solid rgba(0, 0, 0, .9);
     border-radius: 2px;
 }
 
@@ -63,6 +61,5 @@
 
 .btn-close:hover {
     cursor: pointer;
-   
-   
+    color: red;
 }

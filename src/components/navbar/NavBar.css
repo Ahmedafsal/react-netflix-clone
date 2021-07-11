@@ -10,13 +10,13 @@
     
 }
 
-.navbar span {
-    position: fixed;
-    right: 60px;
+.navbar span{
+    padding-right: 1rem;
 }
 
 .navbar span:hover {
     cursor: pointer;
+    text-shadow: 2px 2px 2px #333;
 }
 
 .navbar span p {
@@ -35,8 +35,23 @@
     cursor: pointer;
 }
 
-.avatar {
+.right-side {
     position: fixed;
     right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.avatar {
     width: 30px;
+    height: 30px;
+    border-radius: .5rem;
+    padding: .1rem;
+    background-color: hsla(200, 100%, 100%, .5);
+    width: 30px;
+}
+
+.avatar:hover {
+    cursor: pointer;
+    background-color: hsla(200, 100%, 100%, .7); 
 }

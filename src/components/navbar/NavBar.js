@@ -19,21 +19,22 @@ function NavBar() {
             }
                 src={netflixLogo}
                 alt="netflix-log" />
-            {
-        /*--logout button, make it right by drope down--*/
-                user && <span onClick= {()=> {
-                        Firebase.auth().signOut().then(()=>{
-                        history.push("/login")
-                        alert("Logging out..!")
-                        }).catch((error)=> {
-                        alert(error.message)
-                        })
-                    }}>{user.displayName}
-                        <p>/logout</p>
-                    </span> 
-            }
-            <img className= "avatar" src="https://i.pinimg.com/originals/0d/dc/ca/0ddccae723d85a703b798a5e682c23c1.png" alt="" />
-           
+            <div className= "right-side">
+                {
+            /*--logout button, make it right by drope down--*/
+                    user && <span onClick= {()=> {
+                            Firebase.auth().signOut().then(()=>{
+                            history.push("/login")
+                            alert("Logging out..!")
+                            }).catch((error)=> {
+                            alert(error.message)
+                            })
+                        }}>{user.displayName}
+                            <p>/logout</p>
+                        </span> 
+                }
+                <img className= "avatar" src="https://static.thenounproject.com/png/1154305-200.png" alt="" />
+            </div>
         </div>
     )
 }

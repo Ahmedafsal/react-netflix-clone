@@ -19,3 +19,35 @@
 .navbar-logo:hover {
     cursor: pointer;
 }
+
+.btn-small {
+    border: 0;
+    outline: 0;
+    min-width: 90px;
+    height: 35px;
+    border-radius: 2px;
+    color: white;
+    font-size: .9rem;
+    font-weight: 500;
+    background-color: rgb(209, 5, 5);
+}
+
+.btn-small:hover {
+    cursor: pointer;
+    background-color: rgb(233, 7, 7);;
+}
+
+.fork {
+    margin-left: 2em;
+    width: 30px;
+    height: 30px;
+    border-radius: .5rem;
+    padding: .1rem;
+    background-color: hsla(200, 100%, 100%, .5);
+    width: 30px;
+}
+
+.fork:hover {
+    cursor: pointer;
+    background-color: hsla(200, 100%, 100%, .7); 
+}

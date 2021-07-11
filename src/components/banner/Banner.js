@@ -5,12 +5,10 @@ import axios from '../Axios'
 import { API_KEY, imageUrl } from '../constants/Contants';
 
 
-
 function Banner() {
 
     const [movie, setMovie] = useState();
     let shuffle = Math.floor((Math.random() * 20));
-
     useEffect(() => {
         axios.get(`trending/all/day?api_key=${API_KEY}`).then((response)=>{
             //console.log("trending list")
