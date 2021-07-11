@@ -40,9 +40,11 @@ function RowPost(props) {
                 setUrlId(response.data.results[0])
             }else {
                 //console.log("Array empty")
+                setView(false)
                 alert("Oops..! video is not available")
             }
         }).catch(err=> {
+            setView(false)
             alert("Network error")
         })
     }
