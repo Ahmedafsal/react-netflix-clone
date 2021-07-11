@@ -8,7 +8,7 @@ function RowPost(props) {
 
     const [movies, setMovies] = useState([])
     const [urlId, setUrlId] = useState([])
-    const [view, setView ] = useState(true)
+    const [view, setView ] = useState(false)
 
     useEffect(() => {
         axios.get(props.url).then((response)=> {
@@ -16,7 +16,7 @@ function RowPost(props) {
             setMovies(response.data.results)
         }).catch(err=> {
             setView(false)
-            alert('1 Network Error')
+            alert('Network Error')
         })
         
     }, [])
@@ -34,10 +34,10 @@ function RowPost(props) {
         //console.log(id);
         //id from maped object
         /*if you need to close one when open another*/
-        setView(true)
         axios.get(`movie/${id}/videos?api_key=${API_KEY}&language=en-US`).then((response)=> {
             //console.log(response.data)
             if(response.data.results.length !== 0) {
+                setView(true)
                 setUrlId(response.data.results[0])
             }else {
                 //console.log("Array empty")
@@ -45,7 +45,6 @@ function RowPost(props) {
                 alert("Oops..! video is not available")
             }
         }).catch(err=> {
-            setView(false)
             alert("Network error")
         })
     }
